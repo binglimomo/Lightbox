@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; " charset="utf-8">
+<title>lightbox</title>
+<link rel="stylesheet" type="text/css" href="css/lightbox.css">
+<script src="http://libs.baidu.com/jquery/1.9.0/jquery.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript"  src="js/lightbox.js" charset="utf-8"></script>
+</head>
+
+<body>
+<h4>First group of Pic</h4>
+<div>
+<img src="image/1.jpg" width="200" height="100" 
+        class ="lightbox"
+		data-id="ajfj" 
+		data-group="group-1" 
+		data-source="image/1.jpg"
+		data-caption="ajfj"/>
+<img src="image/2.jpg" width="200" height="100" class ="lightbox" data-id="afae" data-group="group-1" data-source="image/2.jpg" data-caption="afae"/>
+<img src="image/8.jpg" width="200" height="100" class ="lightbox" data-id="aaa" data-group="group-1" data-source="image/8.jpg" data-caption="aaaaaa"/>
+</div>
+<h4>Second group of Pic</h4>
+<div>
+<img src="image/3.jpg" width="200" height="100" class ="lightbox" data-id="af" data-group="group-2" data-source="image/3.jpg" data-caption="af"/>
+<img src="image/4.jpg" width="200" height="100" class ="lightbox" data-id="ad" data-group="group-2" data-source="image/4.jpg" data-caption="ad"/>
+</div>
+
+
+<!--遮罩层
+<div id="G-mask"></div>
+<!--弹出层
+<div id="G-popup">
+    <div class="image-view">
+		<span class="pre-btn"></span>	
+		<img src="image/6.jpg" class="image" width="100%" />	
+		<span class="next-btn"></span>	</div>
+	<div class="div-image-caption">
+		<div class="caption-area">
+			<p class="image-caption">图片标题</p>
+			<span class="image-index">当前索引：1 of 4</span>
+		</div>
+		<span class="close-btn"></span>
+	</div>
+</div>-->
+
+<script>
+$(function(){
+var lightbox = new LightBox({speed:"fast"});
+});
+</script>
+</body>
+</html>
